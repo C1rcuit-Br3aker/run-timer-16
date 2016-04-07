@@ -1,12 +1,13 @@
-$button-grey: #ddd;
-$button-green: #80cbc4;
-$brand-blue: #00bbd3;
-$title-white: #fff;
-$regular-text: rgba(255, 255, 255, 0.6);
-$placeholder-text: rgba(255, 255, 255, 0.4);
-$green-text: #92cbc5;
-$button-text-grey: #1c1c1c;
+@import 'base';
+@import 'variables';
 
-$font-family: Roboto;
-$base-font-size: 16px;
-$base-line-height: 24px;
+.container {
+  max-width: 20rem;
+  margin: auto;
+}
+
+.top-nav {
+  background: $brand-blue;
+  color: $title-white;
+  overflow: auto;
+}
