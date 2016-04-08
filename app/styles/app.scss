@@ -1,13 +1,3 @@
-@import 'base';
 @import 'variables';
-
-.container {
-  max-width: 20rem;
-  margin: auto;
-}
-
-.top-nav {
-  background: $brand-blue;
-  color: $title-white;
-  overflow: auto;
-}
+@import 'base';
+@import 'index';
