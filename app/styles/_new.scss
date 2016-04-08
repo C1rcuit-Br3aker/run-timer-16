@@ -1,0 +1,28 @@
+.run-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.run-time {
+  color: $button-green;
+}
+
+.new-footer__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.fa-chevron-left {
+  padding: 24px;
+  border-radius: 50%;
+  background: $button-grey;
+  color: $background-color;
+}
+
+.fa-pencil {
+  padding: 24px;
+  border-radius: 50%;
+  background: $green-text;
+  color: $title-white;
+}

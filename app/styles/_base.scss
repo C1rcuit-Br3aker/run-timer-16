@@ -13,6 +13,12 @@ body {
   line-height: 24px;
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 footer {
   background: $background-color;
 }
@@ -29,12 +35,13 @@ footer {
 }
 
 .main-content {
-  height: 100vh;
+  flex-grow: 1;
   background: $background-color;
+  color: $regular-text;
 }
 
 .content__title {
   margin: 0;
   padding-top: 1rem;
-  color: $regular-text;
+  color: $title-white;
 }
