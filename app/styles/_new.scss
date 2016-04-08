@@ -1,10 +1,15 @@
-.run-info {
-  display: flex;
-  justify-content: space-between;
+.details-item {
+  padding-top: 2rem;
+  list-style: none;
 }
 
-.run-time {
-  color: $button-green;
+:placeholder-shown {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid $placeholder-text;
+  background: $background-color;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .new-footer__content {
@@ -13,16 +18,8 @@
   padding: 1rem 0;
 }
 
-.fa-chevron-left {
-  padding: 24px;
-  border-radius: 50%;
-  background: $button-grey;
-  color: $background-color;
-}
-
-.fa-pencil {
-  padding: 24px;
-  border-radius: 50%;
+.save-button {
+  padding: 0.5rem 1rem;
+  border: 0;
   background: $green-text;
-  color: $title-white;
 }

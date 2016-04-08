@@ -11,24 +11,32 @@
   <div class="main-content">
     <div class="container">
       <h1 class="content__title">My Run</h1>
-      <div class="run-info">
-        <p class="run-date">Jan. 1, 2015</p>
-        <p class="run-time">01:23:45</p>
-      </div>
-      <div class="run-description__container">
-        <p class="run-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,
-         harum, hic. Quos alias iure perferendis repellat cum excepturi voluptatum veniam vel
-         molestiae dolorum, quaerat, dolor error neque odit rerum. Voluptate?</p>
-      </div>
+      <form class="content-details">
+        <ul class="details-list">
+
+          <li class="details-item">
+            {{input pattern="{{999}}:{{99}:{{99}}}" placeholder="Run Time"}}
+          </li>
+
+          <li class="details-item">
+            {{input pattern="{{99}}/{{99}/{{2999}}}" placeholder="Race Date"}}
+          </li>
+
+          <li class="details-item">
+            {{input  placeholder="Race Notes"}}
+          </li>
+
+        </ul>
+      </form>
     </div>
   </div>
   <footer>
     <nav class="footer__nav">
       <div class="container">
         <div class="new-footer__content">
-          {{fa-icon "chevron-left"}}
+          <button class="cancel-button">CANCEL</button>
           {{!-- {{#link-to "new"}} --}}
-          {{fa-icon "pencil"}}
+          <button class="save-button">SAVE</button>
           {{!-- {{/link-to}} --}}
         </div>
       </div>
