@@ -23,7 +23,7 @@
           </li>
 
           <li class="details-item">
-            {{input class="details-input" value=model.details  placeholder="Race Notes"}}
+            {{textarea class="details-input resize" autoresize=true value=model.details  placeholder="Race Notes"}}
           </li>
 
         </ul>
@@ -31,7 +31,7 @@
           <nav class="footer__nav">
             <div class="container">
               <div class="new-footer__content">
-                {{#link-to "details"}}
+                {{#link-to "details" model._id}}
                 <button class="cancel-button">CANCEL</button>
                 {{/link-to}}
                 <button class="save-button">SAVE</button>
