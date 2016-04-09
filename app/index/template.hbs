@@ -11,12 +11,16 @@
   </header>
   <div class="main-content">
     <div class="container">
+      {{#each model as |run|}}
       <ul class="list">
+        {{#link-to "details"}}
         <li class="list-item">
-          <p class="item-date">Text</p>
-          <p class="item-time">12:34:56</p>
+          <p class="item-date">{{run.date}}</p>
+          <p class="item-time">{{run.time}}</p>
         </li>
+        {{/link-to}}
       </ul>
+      {{/each}}
     </div>
   </div>
   <footer>

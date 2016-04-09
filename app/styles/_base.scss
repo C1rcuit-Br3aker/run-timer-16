@@ -13,6 +13,10 @@ body {
   line-height: 24px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .app {
   display: flex;
   flex-direction: column;

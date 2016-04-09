@@ -1,0 +1,36 @@
+<div class="app">
+  <header>
+    <div class="top-nav">
+      <div class="container">
+        <div class="top-nav__content">
+          <h2 class="top-nav__title">Run Timer</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="main-content">
+    <div class="container">
+      <h1 class="content__title">My Run</h1>
+      <div class="run-info">
+        <p class="run-date">{{model.date}}</p>
+        <p class="run-time">{{model.time}}</p>
+      </div>
+      <div class="run-description__container">
+        <p class="run-description">{{model.details}}</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <nav class="footer__nav">
+      <div class="container">
+        <div class="new-footer__content">
+          {{fa-icon "chevron-left"}}
+          {{!-- {{#link-to "new"}} --}}
+          {{fa-icon "pencil"}}
+          {{!-- {{/link-to}} --}}
+        </div>
+      </div>
+    </nav>
+  </footer>
+</div>
+{{outlet}}
