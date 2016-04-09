@@ -10,20 +10,20 @@
   </header>
   <div class="main-content">
     <div class="container">
-      <h1 class="content__title">My Run</h1>
-      <form class="content-details">
+      <h1 class="content__title">New Run</h1>
+      <form class="content-details" {{action submitForm on="submit"}} novalidate="novalidate">
         <ul class="details-list">
 
           <li class="details-item">
-            {{input pattern="{{999}}:{{99}:{{99}}}" placeholder="Run Time"}}
+            {{input-formatted pattern="{{99}}:{{99}}:{{99}}" class="details-input" value=time placeholder="Run Time (HH:MM:SS)"}}
           </li>
 
           <li class="details-item">
-            {{input pattern="{{99}}/{{99}/{{2999}}}" placeholder="Race Date"}}
+            {{input-formatted pattern="{{99}}/{{99}}/{{9999}}" class="details-input" value=date placeholder="Race Date (MM/DD/Year)"}}
           </li>
 
           <li class="details-item">
-            {{input  placeholder="Race Notes"}}
+            {{input-formatted class="details-input" value=details  placeholder="Race Notes"}}
           </li>
 
         </ul>
@@ -34,10 +34,10 @@
     <nav class="footer__nav">
       <div class="container">
         <div class="new-footer__content">
+          {{#link-to "index"}}
           <button class="cancel-button">CANCEL</button>
-          {{!-- {{#link-to "new"}} --}}
+          {{/link-to}}
           <button class="save-button">SAVE</button>
-          {{!-- {{/link-to}} --}}
         </div>
       </div>
     </nav>
