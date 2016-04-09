@@ -11,7 +11,7 @@
   <div class="main-content">
     <div class="container">
       <h1 class="content__title">New Run</h1>
-      <form class="content-details" {{action submitForm on="submit"}} novalidate="novalidate">
+      <form {{action submitForm on="submit"}} novalidate="novalidate">
         <ul class="details-list">
 
           <li class="details-item">
@@ -23,24 +23,24 @@
           </li>
 
           <li class="details-item">
-            {{input-formatted class="details-input" value=details  placeholder="Race Notes"}}
+            {{input class="details-input" value=details  placeholder="Race Notes"}}
           </li>
 
         </ul>
+        <footer>
+          <nav class="footer__nav">
+            <div class="container">
+              <div class="new-footer__content">
+                {{#link-to "index"}}
+                <button class="cancel-button">CANCEL</button>
+                {{/link-to}}
+                <button class="save-button">SAVE</button>
+              </div>
+            </div>
+          </nav>
+        </footer>
       </form>
     </div>
   </div>
-  <footer>
-    <nav class="footer__nav">
-      <div class="container">
-        <div class="new-footer__content">
-          {{#link-to "index"}}
-          <button class="cancel-button">CANCEL</button>
-          {{/link-to}}
-          <button class="save-button">SAVE</button>
-        </div>
-      </div>
-    </nav>
-  </footer>
 </div>
 {{outlet}}
