@@ -1,0 +1,48 @@
+<div class="app">
+  <header>
+    <div class="top-nav">
+      <div class="container">
+        <div class="top-nav__content">
+          <h2 class="top-nav__title">Run Timer</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="main-content">
+    <div class="container">
+      <h1 class="content__title">Edit Run</h1>
+      <form {{action submitEdit on="submit"}} novalidate="novalidate">
+        <ul class="details-list">
+
+          <li class="details-item">
+            {{input-formatted pattern="{{99}}:{{99}}:{{99}}" class="details-input" value=model.time placeholder="Run Time (HH:MM:SS)"}}
+          </li>
+
+          <li class="details-item">
+            {{input-formatted pattern="{{99}}/{{99}}/{{9999}}" class="details-input" value=model.date placeholder="Race Date (MM/DD/Year)"}}
+          </li>
+
+          <li class="details-item">
+            {{input class="details-input" value=model.details  placeholder="Race Notes"}}
+          </li>
+
+        </ul>
+        <footer>
+          <nav class="footer__nav">
+            <div class="container">
+              <div class="new-footer__content">
+                {{#link-to "details"}}
+                <button class="cancel-button">CANCEL</button>
+                {{/link-to}}
+                <button class="save-button">SAVE</button>
+              </div>
+            </div>
+          </nav>
+        </footer>
+      </form>
+    </div>
+  </div>
+</div>
+{{outlet}}
+
+{{outlet}}

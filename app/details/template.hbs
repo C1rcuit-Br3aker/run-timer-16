@@ -25,9 +25,12 @@
       <div class="container">
         <div class="new-footer__content">
           {{#link-to "index"}}
-          {{fa-icon "chevron-left"}}
+            {{fa-icon "chevron-left"}}
           {{/link-to}}
-          {{fa-icon "pencil"}}
+
+          {{#link-to "edit" model._id}}
+            {{fa-icon "pencil"}}
+          {{/link-to}}
         </div>
       </div>
     </nav>
