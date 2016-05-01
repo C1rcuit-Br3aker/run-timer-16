@@ -1,0 +1,37 @@
+{{outlet}}
+<div class="app">
+  <header>
+    <div class="top-nav">
+      <div class="container">
+        <div class="top-nav__content">
+          <h2 class="top-nav__title">Run Timer</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="main-content">
+    <div class="container">
+      {{#each model as |run|}}
+      <ul class="list">
+        {{#link-to "details" run._id}}
+        <li class="list-item">
+          <p class="item-date">{{run.date}}</p>
+          <p class="item-time">{{run.time}}</p>
+        </li>
+        {{/link-to}}
+      </ul>
+      {{/each}}
+    </div>
+  </div>
+  <footer>
+    <nav class="footer__nav">
+      <div class="container">
+        <div class="footer__content">
+          {{#link-to "new"}}
+          {{fa-icon "plus"}}
+          {{/link-to}}
+        </div>
+      </div>
+    </nav>
+  </footer>
+</div>

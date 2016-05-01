@@ -1,0 +1,38 @@
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $placeholder-text;
+  text-decoration: none;
+}
+
+.item-date {
+  flex-grow: 1;
+  color: $regular-text;
+}
+
+.item-time {
+  color: $green-text;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 0;
+}
+
+.fa-plus {
+  padding: 1rem;
+  border-radius: 50%;
+  background: $green-text;
+  color: $title-white;
+}
+
+.list {
+  flex-grow: 1;
+}

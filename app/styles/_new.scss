@@ -1,0 +1,31 @@
+.details-item {
+  padding-top: 2rem;
+  list-style: none;
+}
+
+.details-input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid $placeholder-text;
+  background: $background-color;
+  color: $green-text;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.new-footer__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.save-button {
+  padding: 0.5rem 1rem;
+  border: 0;
+  background: $green-text;
+}
+
+.cancel-button {
+  padding: 0.5rem 1rem;
+  border: 0;
+}
